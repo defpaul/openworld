@@ -2,7 +2,7 @@
 
 cd ./src
 
-cc main.c lib.c -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o game
+cc main.c lib.c level.c -lraylib -lGL -lm -lpthread -ldl -lrt -lX11 -o game
 
 if [ $? -eq 0 ]; then
     printf "\n\033[0;32mbuild succselfully \n"
